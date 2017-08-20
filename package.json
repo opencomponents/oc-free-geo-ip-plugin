@@ -1,0 +1,30 @@
+{
+  "name": "oc-free-geo-ip-plugin",
+  "version": "1.0.0",
+  "description": "OpenComponents FreeGeoIP plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opencomponents/oc-free-geo-ip-plugin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opencomponents/oc-free-geo-ip-plugin/issues"
+  },
+  "homepage": "https://github.com/opencomponents/oc-free-geo-ip-plugin#readme",
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "jest-fetch-mock": "^1.2.1"
+  },
+  "dependencies": {
+    "node-fetch": "^1.7.2"
+  },
+  "jest": {
+    "setupFiles" : ["./setupJest.js"]
+  }
+}
