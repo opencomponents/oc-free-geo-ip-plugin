@@ -14,10 +14,14 @@ describe('index', () => {
   });
 
   describe('execute', () => {
-    test('fetch response to match snapshot', (done) => {
+    beforeEach(() => {
       fetch.mockClear();
       fetch.mockResponse(JSON.stringify(payload));
+    });
+
+    test('fetch response to match snapshot', (done) => {
       const context = { requestHeaders: { 'x-forwarded-for': '98.6.106.250' } };
+
       index.execute(context).then((data) => {
         expect(data).toMatchSnapshot();
         done();
@@ -45,13 +49,22 @@ describe('index', () => {
 
     scenarios.forEach(({ description, requestHeaders }) => {
       test(description, (done) => {
-        fetch.mockClear();
-        fetch.mockResponse(JSON.stringify(payload));
         const context = { requestHeaders };
+
         index.execute(context).then(() => {
           expect(fetch.mock.calls).toMatchSnapshot();
           done();
         });
+      });
+    });
+
+    test('w/ undefined headers should return an empty object', (done) => {
+      const context = { requestHeaders: {} };
+
+      index.execute(context).then((data) => {
+        expect(data).toEqual({});
+        expect(fetch).not.toHaveBeenCalled();
+        done();
       });
     });
   });
