@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index execute fetch response to match snapshot 1`] = `
+Object {
+  "city": "Cedar Park",
+  "country_code": "US",
+  "country_name": "United States",
+  "ip": "98.6.106.250",
+  "latitude": 30.4998,
+  "longitude": -97.8082,
+  "metro_code": 635,
+  "region_code": "TX",
+  "region_name": "Texas",
+  "time_zone": "America/Chicago",
+  "zip_code": "78613",
+}
+`;
+
+exports[`index execute w/ "remoteAddress" 1`] = `
+Array [
+  Array [
+    "http://freegeoip.net/json/8.8.8.8",
+  ],
+]
+`;
+
+exports[`index execute w/ "remoteAddress" w/ multiple addresses 1`] = `
+Array [
+  Array [
+    "http://freegeoip.net/json/10.0.0.10",
+  ],
+]
+`;
+
+exports[`index execute w/ "x-forwarded-for" 1`] = `
+Array [
+  Array [
+    "http://freegeoip.net/json/98.6.106.250",
+  ],
+]
+`;
+
+exports[`index execute w/ "x-forwarded-for" w/ multiple addresses 1`] = `
+Array [
+  Array [
+    "http://freegeoip.net/json/127.0.0.1",
+  ],
+]
+`;
