@@ -19,7 +19,7 @@ Object {
 exports[`index execute w/ "remoteAddress" 1`] = `
 Array [
   Array [
-    "http://freegeoip.net/json/8.8.8.8",
+    "https://freegeoip.net/json/8.8.8.8",
   ],
 ]
 `;
@@ -27,7 +27,7 @@ Array [
 exports[`index execute w/ "remoteAddress" w/ multiple addresses 1`] = `
 Array [
   Array [
-    "http://freegeoip.net/json/10.0.0.10",
+    "https://freegeoip.net/json/10.0.0.10",
   ],
 ]
 `;
@@ -35,7 +35,7 @@ Array [
 exports[`index execute w/ "x-forwarded-for" 1`] = `
 Array [
   Array [
-    "http://freegeoip.net/json/98.6.106.250",
+    "https://freegeoip.net/json/98.6.106.250",
   ],
 ]
 `;
@@ -43,7 +43,7 @@ Array [
 exports[`index execute w/ "x-forwarded-for" w/ multiple addresses 1`] = `
 Array [
   Array [
-    "http://freegeoip.net/json/127.0.0.1",
+    "https://freegeoip.net/json/127.0.0.1",
   ],
 ]
 `;

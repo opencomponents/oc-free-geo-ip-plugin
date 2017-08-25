@@ -1,7 +1,7 @@
 {
   "name": "oc-free-geo-ip-plugin",
-  "version": "1.0.0",
-  "description": "OpenComponents FreeGeoIP plugin",
+  "version": "1.0.0-alpha.1",
+  "description": "OpenComponents freegeoip plugin",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -12,8 +12,24 @@
     "type": "git",
     "url": "git+https://github.com/opencomponents/oc-free-geo-ip-plugin.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "opencomponents",
+    "free",
+    "geo",
+    "ip",
+    "plugin",
+    "registry"
+  ],
+  "author": {
+    "name": "Elias Lopez",
+    "email": "elias.lopez@senioradvisor.com"
+  },
+  "contributors": [
+    {
+      "name": "Mattia Richetto",
+      "email": "mattia.richetto@gmail.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/opencomponents/oc-free-geo-ip-plugin/issues"
