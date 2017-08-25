@@ -1,3 +1,3 @@
 # oc-free-geo-ip-plugin
 
-OpenComponents FreeGeoIP plugin
+OpenComponents [freegeoip](https://freegeoip.net/) plugin
