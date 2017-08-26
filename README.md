@@ -3,5 +3,5 @@
 OpenComponents [freegeoip](https://freegeoip.net/) plugin
 
 ```bash
-npm i oc-free-geo-ip-plugin
+npm i -S oc-free-geo-ip-plugin
 ```
