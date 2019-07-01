@@ -11,7 +11,9 @@ Object {
   "metro_code": 635,
   "region_code": "TX",
   "region_name": "Texas",
+  "remoteAddress": undefined,
   "time_zone": "America/Chicago",
+  "x-forwarded-for": "98.6.106.250",
   "zip_code": "78613",
 }
 `;
